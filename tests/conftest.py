@@ -4,6 +4,7 @@ from playwright.sync_api import sync_playwright, Browser
 
 # Root site url (with trailing slash)
 SITE_URL = "https://www.knihkupec.com/" 
+CART_SAVE_MAIL = "nemam@nedam.cz"
 
 # Create browser with settings
 @pytest.fixture()
