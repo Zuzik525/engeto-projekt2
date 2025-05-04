@@ -30,3 +30,7 @@ def page(browser: Browser):
 
     yield page
     page.close()
+
+# Helper - Extracts numerical price from price text
+def extract_price(text : str) -> int:
+    return int(re.findall(r'\d+', text)[0])
